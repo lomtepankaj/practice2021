@@ -1,0 +1,183 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6205079100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "User logins to AMWEB",
+        "description": "",
+        "id": "login-to-am-webapp;user-logins-to-amweb",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17500225400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on landing page",
+            "match": {
+              "location": "LoginSteps.User_launch_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4063355900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters username and password",
+            "match": {
+              "location": "LoginSteps.User_enters_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15676700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User gets logged in",
+            "match": {
+              "location": "LoginSteps.getloginpagetitle()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2089263400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "User goes to Hotlines",
+        "description": "",
+        "id": "login-to-am-webapp;user-goes-to-hotlines",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21582600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on Homepage",
+            "match": {
+              "location": "gotoHotlines.User_on_Homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 49166700,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//a[contains(text(),\u0027Hotlines\u0027)]\"}\n  (Session info: chrome\u003d90.0.4430.93)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0-beta-4\u0027, revision: \u002729f46d02dd\u0027\nSystem info: host: \u0027DS-231\u0027, ip: \u0027192.168.43.168\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [635b1249d61e7954bd3ee28c81acde2d, findElement {using\u003dxpath, value\u003d//a[contains(text(),\u0027Hotlines\u0027)]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\\Users\\Pankajl\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60439}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60439/devtoo..., se:cdpVersion: 90.0.4430.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 635b1249d61e7954bd3ee28c81acde2d\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:162)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:137)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:612)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1251)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy22.click(Unknown Source)\r\n\tat com.BDDPOM.pages.Homepage.gotoHotlines(Homepage.java:26)\r\n\tat com.BDDPOM.stepDefinitions.gotoHotlines.Use_clicks_hotlines(gotoHotlines.java:28)\r\n\tat ✽.When User cliks on Hotlines(src/main/java/com/BDDPOM/Features/Anonymoose.feature:10)\r\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "User cliks on Hotlines",
+            "match": {
+              "location": "gotoHotlines.Use_clicks_hotlines()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User goes to Hotlines directory",
+            "match": {
+              "location": "gotoHotlines.go_to_hotline_directory()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3022440900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.openBrowser()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "User sorts the Hotlines",
+        "description": "",
+        "id": "login-to-am-webapp;user-sorts-the-hotlines",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 31871700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User is on Hotlines Directory",
+            "match": {
+              "location": "sortHotlines.User_on_HL_DIR()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 72559900,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/span[text()\u003d\u0027Hotline Name\u0027]\"}\n  (Session info: chrome\u003d90.0.4430.93)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0-beta-4\u0027, revision: \u002729f46d02dd\u0027\nSystem info: host: \u0027DS-231\u0027, ip: \u0027192.168.43.168\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.2\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [96a0b9fff4e6dbfd25c08e7510a11a02, findElement {using\u003dxpath, value\u003d//div/span[text()\u003d\u0027Hotline Name\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\\Users\\Pankajl\\AppData\\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:60456}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60456/devtoo..., se:cdpVersion: 90.0.4430.93, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 96a0b9fff4e6dbfd25c08e7510a11a02\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:162)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:137)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:612)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1251)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:373)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy22.click(Unknown Source)\r\n\tat com.BDDPOM.pages.Hotlines.sorting(Hotlines.java:26)\r\n\tat com.BDDPOM.stepDefinitions.sortHotlines.User_on_Hotlines_Name(sortHotlines.java:29)\r\n\tat ✽.When User clicks on Hotline name(src/main/java/com/BDDPOM/Features/Anonymoose.feature:15)\r\n",
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "User clicks on Hotline name",
+            "match": {
+              "location": "sortHotlines.User_on_Hotlines_Name()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "Results are sorted",
+            "match": {
+              "location": "sortHotlines.Results_sorted()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login to AM WebApp",
+    "description": "",
+    "id": "login-to-am-webapp",
+    "keyword": "Feature",
+    "uri": "src/main/java/com/BDDPOM/Features/Anonymoose.feature"
+  }
+]
